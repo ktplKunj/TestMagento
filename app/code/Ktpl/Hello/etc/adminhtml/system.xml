@@ -19,6 +19,11 @@
                     <comment>Must be in the allowed values list</comment>
                     <validate>validate-per-page-value</validate>
                 </field>
+                <field id="hello_grid_per_page_values" translate="label comment" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Products per Page on Grid Allowed Values</label>
+                    <comment>Comma-separated.</comment>
+                    <validate>validate-per-page-value-list</validate>
+                </field>
             </group>
         </section>
     </system>
