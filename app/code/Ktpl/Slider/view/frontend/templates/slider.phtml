@@ -1,0 +1,24 @@
+<?php
+/*echo $block->getBData();
+echo "<br><br>";
+exit;*/
+$slideData=$block->getSlideData(); $count=$block->getCount(); ?>
+<?php if($count>0): ?>
+<script>
+    /*require(['jquery','Ktpl_Slider/js/jquery-cycle2-min']);
+    require(['jquery','Ktpl_Slider/js/jquery-cycle2-swipe-min']);*/
+    require(['jquery','Ktpl_Slider/js/slideshow']);
+</script>
+<div class="slider-main">
+    <div class="slideshow-container">
+        <ul class="slideshow">
+            <?php foreach($slideData as $k=>$slide): ?>
+                <li><?php echo $block->getContentHtml($slide['content']) ?></li>
+            <?php endforeach; ?>
+        </ul>
+        <div class="slideshow-pager">&nbsp;</div>
+        <span class="slideshow-prev">&nbsp;</span>
+        <span class="slideshow-next">&nbsp;</span>
+    </div>
+</div>
+<?php endif; ?>

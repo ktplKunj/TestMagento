@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <block class="Jk\Test\Block\Adminhtml\Test" name="test_test_listing"/>
+        </referenceContainer>
+        <referenceContainer name="admin.test.test.grid"></referenceContainer>
+    </body>
+</page>

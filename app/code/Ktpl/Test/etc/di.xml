@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+    <preference for="Ktpl\Test\Model\Config\ConfigInterface" type="Ktpl\Test\Model\Config" />
+    <type name="Ktpl\Test\Model\Config\Reader">
+        <arguments>
+            <argument name="fileName" xsi:type="string">test.xml</argument>
+            <argument name="domDocumentClass" xsi:type="string">Magento\Framework\Config\Dom</argument>
+            <argument name="defaultScope" xsi:type="string">global</argument>
+            <argument name="idAttributes" xsi:type="array"></argument>
+        </arguments>
+    </type>
+</config>

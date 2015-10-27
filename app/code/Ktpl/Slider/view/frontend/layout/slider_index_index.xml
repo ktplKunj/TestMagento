@@ -1,0 +1,13 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <referenceBlock name="header">
+                <referenceBlock name="head.components">
+                    <block class="Magento\Framework\View\Element\Js\Components" name="checkout_page_head_components" template="Magento_Checkout::js/components.phtml"/>
+                </referenceBlock>
+            </referenceBlock>
+            <block class="Ktpl\Slider\Block\Slider" name="slider" template="slider.phtml">
+            </block>
+        </referenceContainer>
+    </body>
+</page>

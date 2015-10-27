@@ -1,0 +1,12 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <block class="Ktpl\Hello\Block\Hello" name="hello" template="hello.phtml">
+                <block class="Magento\Theme\Block\Html\Pager" name="hello_list_toolbar_pager"/>
+                <!--<block class="Ktpl\Hello\Block\Toolbar" name="hello_toolbar" template="hello/toolbar.phtml">
+                    <block class="Magento\Theme\Block\Html\Pager" name="hello_list_toolbar_pager"/>
+                </block>-->
+            </block>
+        </referenceContainer>
+    </body>
+</page>

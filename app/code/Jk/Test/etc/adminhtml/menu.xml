@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Backend/etc/menu.xsd">
+    <menu>
+        <add id="Jk_Test::jk" title="Jks" module="Jk_Test" sortOrder="100" resource="Jk_Test::test"/>
+        <add id="Jk_Test::test" title="Jk test" module="Jk_Test" sortOrder="1" parent="Jk_Test::jk" action="test/test" resource="Jk_Test::test"/>
+    </menu>
+</config>

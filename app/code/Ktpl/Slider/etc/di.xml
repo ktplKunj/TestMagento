@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\Console\CommandList">
+        <arguments>
+            <argument name="commands" xsi:type="array">
+                <item name="ktpl_my_deploy" xsi:type="object">Ktpl\Slider\Console\Command\MyDeployCommand</item>
+            </argument>
+        </arguments>
+    </type>
+    <preference for="Ktpl\Slider\Model\MyTestA" type="Ktpl\Slider\Model\MyTestB" />
+   <!-- <preference for="Ktpl\Slider\Model\MyTestB" type="Ktpl\Slider\Block\Slider" />-->
+<!--
+    <type name="Ktpl\Slider\Block\Slider">
+        <arguments>
+            <argument name="hello" xsi:type="object">Ktpl\Hello\Block\Hello</argument>
+        </arguments>
+    </type>
+-->
+    <preference for="Magento\Catalog\Model\Product" type="Ktpl\Slider\Model\Product" />
+    <!--<type name="Ktpl\Slider\Model\Product">
+        <arguments>
+            <argument name="product" xsi:type="object">Magento\Catalog\Model\Product</argument>
+        </arguments>
+    </type>-->
+    <!--<type name="Ktpl\Hello\Block\Hello">
+        <arguments>
+            <argument name="Hello" xsi:type="object">Ktpl\Slider\Block\Slider</argument>
+        </arguments>
+    </type>-->
+    <!--<type name="Magento\Catalog\Model\Product">
+        <plugin name="setCugfstomName" type="Ktpl\Slider\Model\Plugin\Product" sortOrder="200" disabled="false" />
+    </type>-->
+</config>

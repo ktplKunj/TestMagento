@@ -1,0 +1,14 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="Ktpl_Slider::css/slider.css"/>
+    </head>
+    <body>
+        <referenceContainer name="content">
+            <referenceBlock name="header">
+                <referenceBlock name="head.components">
+                    <block class="Magento\Framework\View\Element\Js\Components" name="home_page_head_components" template="Ktpl_Slider::js/components.phtml"/>
+                </referenceBlock>
+            </referenceBlock>
+        </referenceContainer>
+    </body>
+</page>

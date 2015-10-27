@@ -1,0 +1,26 @@
+<?php $collection = $block->getCollection(); ?>
+<div>
+    <?php echo $block->getPagerHtml() ?>
+    <table>
+        <thead>
+            <tr>
+                <th><?php echo __('Title') ?></th>
+                <th><?php echo __('Content') ?></th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach($collection as $hello):?>
+                <tr>
+                    <td><?php echo $hello->getTitle(); ?></td>
+                    <td><?php echo $hello->getContent(); ?></td>
+                </tr>
+            <?php endforeach; ?>
+        </tbody>
+    </table>
+    <?php echo $block->getPagerHtml() ?>
+    <script>
+        require(['jquery','Ktpl_Hello/js/toolBar'],function($,toolBar){
+            toolBar.apply();
+        });
+    </script>
+</div>

@@ -1,0 +1,10 @@
+<div class="block block-test" data-bind="scope: 'test'">
+    <div class="block-title">
+        <strong><?php echo $block->getTitle(); ?></strong>
+        <!-- ko if: wishlist().counter -->
+        <span class="counter"></span>
+        <!-- /ko -->
+    </div>
+    <div class="block-content">
+    </div>
+</div>

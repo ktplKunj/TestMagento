@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Config/etc/system_file.xsd">
+    <system>
+        <tab id="jk" translate="label" sortOrder="600">
+            <label>Jk</label>
+        </tab>
+        <section id="jk" translate="label" type="text" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Test Config</label>
+            <tab>jk</tab>
+            <resource>Jk_Test::config_test</resource>
+            <group id="fields_masks" translate="label" type="text" sortOrder="90" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Product Fields Auto-Generation</label>
+                <field id="sku" translate="label comment" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Mask for SKU</label>
+                    <comment>Use {{name}} as Product Name placeholder</comment>
+                </field>
+                <field id="meta_title" translate="label comment" type="text" sortOrder="20" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Mask for Meta Title</label>
+                    <comment>Use {{name}} as Product Name placeholder</comment>
+                </field>
+                <field id="meta_keyword" translate="label comment" type="text" sortOrder="30" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Mask for Meta Keywords</label>
+                    <comment>Use {{name}} as Product Name or {{sku}} as Product SKU placeholders</comment>
+                </field>
+                <field id="meta_description" translate="label comment" type="text" sortOrder="40" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Mask for Meta Description</label>
+                    <comment>Use {{name}} and {{description}} as Product Name and Product Description placeholders</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
