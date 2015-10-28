@@ -1,12 +1,12 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Config/etc/system_file.xsd">
     <system>
-        <tab id="hello" sortOrder="800">
+        <tab id="hello" translate="label" sortOrder="800">
             <label>Config Hello</label>
         </tab>
-        <section id="general">
+        <section id="general" translate="label" type="text" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
             <label>General</label>
             <tab>hello</tab>
-            <class>separator-top</class>
             <group id="config" translate="label" type="text" sortOrder="1" showInDefault="1" showInStore="1" showInWebsite="1">
                 <label>Config</label>
                 <field id="hello_per_page_values" translate="label comment" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
@@ -18,11 +18,6 @@
                     <label>List per Page Default Value</label>
                     <comment>Must be in the allowed values list</comment>
                     <validate>validate-per-page-value</validate>
-                </field>
-                <field id="hello_grid_per_page_values" translate="label comment" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
-                    <label>Products per Page on Grid Allowed Values</label>
-                    <comment>Comma-separated.</comment>
-                    <validate>validate-per-page-value-list</validate>
                 </field>
             </group>
         </section>
