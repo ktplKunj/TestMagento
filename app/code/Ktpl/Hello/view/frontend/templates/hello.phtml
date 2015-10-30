@@ -1,7 +1,12 @@
 <?php $collection = $block->getCollection(); ?>
 <div>
-    <?php echo $block->getPagerHtml() ?>
-    <table>
+    <div>
+        <?php echo $block->getPagerHtml() ?>
+        <span>
+            <a href="<?php echo $block->getUrl('hello/index');?>"><?php echo __('back To Form Page.') ?></a>
+        </span>
+    </div>
+    <table class="hello_list">
         <thead>
             <tr>
                 <th><?php echo __('Title') ?></th>
@@ -17,8 +22,7 @@
             <?php endforeach; ?>
         </tbody>
     </table>
-    <?php //echo $block->getPagerHtml() ?>
-    <script>
+    <script type="text/javascript">
         require(['jquery','Ktpl_Hello/js/toolBar'],function($,toolBar){
             toolBar.apply();
         });

@@ -127,6 +127,7 @@ class Hello extends \Magento\Framework\View\Element\Template
         $this->setData('_current_limit', $limit);
         return $limit;
     }
+
     public function getDefaultPerPageValue()
     {
         return 1;

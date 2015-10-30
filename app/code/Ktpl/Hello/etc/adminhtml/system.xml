@@ -1,7 +1,7 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Config/etc/system_file.xsd">
     <system>
-        <tab id="hello" translate="label" sortOrder="800">
-            <label>Config Hello</label>
+        <tab id="hello" translate="label" sortOrder="1000">
+            <label>Hello</label>
         </tab>
         <section id="general" translate="label" type="text" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
             <class>separator-top</class>

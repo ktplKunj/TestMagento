@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Backend/etc/menu.xsd">
+    <menu>
+        <add id="Ktpl_Testimonial::testimonial" title="Testimonial" module="Ktpl_Testimonial" sortOrder="40" resource="Ktpl_Testimonial::testimonial"/>
+        <add id="Ktpl_Testimonial::items" title="Manage Testimonial" module="Ktpl_Testimonial" sortOrder="40" parent="Ktpl_Testimonial::testimonial" action="testimonialadmin/manage/" resource="Ktpl_Testimonial::items"/>
+
+     <add id="Ktpl_Testimonial::new" title="New Testimonial" module="Ktpl_Testimonial" sortOrder="40" parent="Ktpl_Testimonial::testimonial" action="testimonialadmin/manage/new" resource="Ktpl_Testimonial::new"/>
+    </menu>
+</config>

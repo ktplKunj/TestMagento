@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Config/etc/system_file.xsd">
+    <system>
+        <tab id="testimonial" translate="label" sortOrder="210">
+            <label>Testimonial</label>
+        </tab>
+        <section id="testimonial" translate="label" type="text" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Testimonial</label>
+            <tab>testimonial</tab>
+             <resource>Ktpl_Testimonial::config_testimonial</resource>
+            <group id="testimonial_setting" translate="label" type="text" sortOrder="90" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Testimonial Setting</label>
+                  <field id="testimonial_title" translate="label comment" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Testimonial Title</label>
+                    <comment>Testimonial Title</comment>
+                </field>
+                <field id="testimonial_limit" translate="label comment" type="text" sortOrder="12" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Testimonial Limit</label>
+                    <comment>Testimonial limit</comment>
+                </field>
+                 <field id="testimonial_mode" translate="label comment" type="select" sortOrder="15" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Testimonial Mode</label>
+                    <source_model>Ktpl\Testimonial\Model\System\Config\Source\Testimonialmode</source_model>
+
+                </field>
+                 <field id="testimonial_sort" translate="label comment" type="select" sortOrder="20" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Testimonial Sorting</label>
+                    <source_model>Ktpl\Testimonial\Model\System\Config\Source\Testimonialsort</source_model>
+
+                </field>
+
+            </group>
+
+        </section>
+    </system>
+</config>

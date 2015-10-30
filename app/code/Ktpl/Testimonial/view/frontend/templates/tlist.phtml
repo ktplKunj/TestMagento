@@ -1,0 +1,33 @@
+<?php
+/**
+ * Copyright © 2015 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+ 
+?>
+<?php 
+$testimonial = $block->getTestimonial();
+
+$pageSize = $block->getTestimonialLimit();
+$sort = $block->getTestimonialSort();
+$sortLabel = $block->getTestimonialSortLabel();
+
+?>
+
+<div class="tetinmonial-list">
+<?php echo $block->getPagerHtml(); ?>
+<table>
+<tr>
+<th><?php echo __('Name'); ?></th>
+<th><?php echo __('Description'); ?></th>
+</tr>
+   <?php foreach($testimonial as $testdata): ?>
+	<tr>
+		<td><?php echo $testdata['firstname'].' '.$testdata['lastname']; ?></td>
+		<td><?php echo $testdata['description']; ?></td>
+	</tr>
+   <?php endforeach; ?>
+</table>
+</div>

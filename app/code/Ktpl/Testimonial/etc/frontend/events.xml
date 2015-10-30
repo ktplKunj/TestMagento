@@ -1,0 +1,8 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../lib/internal/Magento/Framework/Event/etc/events.xsd">
+  <!--  <event name="controller_action_predispatch">
+        <observer name="ktpl_testimonial"instance="Ktpl\Testimonial\Model\Observer" method="changeRequestParams" shared="false" />
+    </event>-->
+    <event name="page_block_html_topmenu_gethtml_before">
+        <observer name="ktpl_add_topmenu_testimonial" instance="Ktpl\Testimonial\Model\Observer" method="addTestimonialToTopmenuItems" />
+    </event>
+</config>
